@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mTickets">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/pubg"
+                android:id="@+id/imageView"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="Upload Date:"
+                    android:id="@+id/uploadDate"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="Upload Time:"
+                    android:id="@+id/uploadTime"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reference ID:"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:id="@+id/referenceID"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Match Charge:"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:id="@+id/matchCharge"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room ID:"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:id="@+id/roomID"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room Password:"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:id="@+id/roomPass"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entry Price(per person):"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:id="@+id/price"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:text="Match Duration:"
+                android:id="@+id/matchDuration"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Match Category:"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:id="@+id/matchCategory"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reward:"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:id="@+id/reward"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Match Date:"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:id="@+id/matchDate"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Match Time:"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:id="@+id/matchTime"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/choosseSquadBtn"
+            android:text="Choose Delivery"
+            android:backgroundTint="#4CAF50"
+            android:layout_margin="10dp"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/removeBtn"
+            android:backgroundTint="#A41111"
+            android:text="Remove"
+            android:layout_margin="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

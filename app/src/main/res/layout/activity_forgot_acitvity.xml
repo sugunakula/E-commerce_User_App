@@ -1,0 +1,54 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Forgot_Acitvity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your email address to reset your password."
+        android:layout_below="@id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/textViewDescription"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/buttonResetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset Password"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/buttonResetPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+</RelativeLayout>
